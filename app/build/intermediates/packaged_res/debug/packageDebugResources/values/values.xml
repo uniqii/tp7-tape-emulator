@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#0A0A0A</color>
+    <style name="Theme.TP7" parent="android:Theme.Material.NoTitleBar">
+        <item name="android:windowBackground">#0A0A0A</item>
+        <item name="android:statusBarColor">#0A0A0A</item>
+        <item name="android:navigationBarColor">#0A0A0A</item>
+    </style>
+</resources>
