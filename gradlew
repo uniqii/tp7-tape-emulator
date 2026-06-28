@@ -8,7 +8,7 @@ APP_HOME=$(CDPATH="" cd "$(dirname "$0")" && pwd)
 
 CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
 
-DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
+DEFAULT_JVM_OPTS='-Xmx64m -Xms64m'
 
 die () {
     echo
