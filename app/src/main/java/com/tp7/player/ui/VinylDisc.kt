@@ -110,11 +110,11 @@ fun VinylDisc(
                         val currentAngle = atan2(pos.y - cy, pos.x - cx)
                         var delta = currentAngle - dragOrigin
                         // Wrap delta to [-PI, PI]
-                        while (delta > PI) delta -= 2 * PI
-                        while (delta < -PI) delta += 2 * PI
+                        while (delta > Math.PI) delta -= (2 * Math.PI)
+                        while (delta < -Math.PI) delta += (2 * Math.PI)
 
                         val deltaFrames = (delta / (2 * PI)) * framesPerFullRotation
-                        manualAngle += (delta * 180f / PI.toFloat())
+                        manualAngle += (delta.toFloat() * 180f / Math.PI.toFloat())
                         dragOrigin = currentAngle
                         onScrub(deltaFrames)
                         change.consume()
